@@ -31,7 +31,7 @@ const SingleInputTemplate = ({ inputHeader, inputKey, handleNavClick, type = "te
             }
         }
 
-        //    if (hasError) return;
+       if (hasError) return;
 
         handleNavClick(action, inputKey, inputValue);
         setInputValue("")
