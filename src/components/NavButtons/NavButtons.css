@@ -1,0 +1,40 @@
+
+.navigation-container {
+    /* left */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+
+    width: 80%;
+    height: 71px;
+
+    border: 1px solid #000000;
+
+}
+
+.navigation-container-button {
+    /* Label */
+    width: 30px;
+    height: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #A54CFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.purple-button {
+    color: #A54CFF;
+}

@@ -1,0 +1,129 @@
+@import './base';
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-y: scroll;
+	font-family: 'Poppins';
+	background-color: $color-background;
+}
+
+.app__container {
+	//width: calc(100% - var($sidebar-width));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: $sidebar-width;
+}
+
+.samplead-divider--horizontal {
+	width: 100%;
+	height: 1px;
+	background-color: $color-N100;
+}
+
+.samplead-title-1 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 50px;
+	/* or 125% */
+	color: $color-black;
+}
+
+.samplead-title-2 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 50px;
+	/* identical to box height, or 167% */
+	color: $color-N500;
+}
+
+.samplead-title {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+	/* or 123% */
+
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: $color-black;
+}
+
+.samplead-caption {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 16px;
+
+	color: $color-N300;
+}
+
+.samplead-body {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: $color-black;
+	white-space: pre-line;
+}
+
+.samplead-body--large {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	/* or 137% */
+	font-feature-settings: 'tnum' on, 'lnum' on;
+	color: $color-black;
+}
+
+.samplead-body--bold {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	color: $color-black;
+}
+
+.samplead-menu-header {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 50px;
+
+	color: $color-N500
+}
+
+.text-center {
+	text-align: center;
+}
+
+.break-line {
+	white-space: pre-line;
+}
+
+.overflow-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

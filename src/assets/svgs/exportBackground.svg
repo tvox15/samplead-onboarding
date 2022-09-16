@@ -1,0 +1,107 @@
+<svg
+        width='555'
+        height='128'
+        viewBox='0 0 555 128'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+>
+    <g clip-path='url(#clip0_418_13672)'>
+        <rect
+                x='44'
+                y='27.2661'
+                width='3.8608'
+                height='16.069'
+                transform='rotate(-57.7771 44 27.2661)'
+                fill='#A54CFF'
+        />
+        <rect
+                x='109.797'
+                y='-8.69788'
+                width='4.59175'
+                height='23.2474'
+                transform='rotate(43.0022 109.797 -8.69788)'
+                fill='#D9B7FF'
+        />
+        <rect
+                x='85.3118'
+                y='39'
+                width='5.11271'
+                height='5.18649'
+                transform='rotate(56.2365 85.3118 39)'
+                fill='#5F2A94'
+        />
+        <rect
+                x='2.55908'
+                y='61'
+                width='8.9633'
+                height='9.09263'
+                transform='rotate(56.2365 2.55908 61)'
+                fill='#5F2A94'
+        />
+        <circle cx='13' cy='34' r='4' fill='#7B31C6' />
+        <circle
+                cx='133.5'
+                cy='18.5'
+                r='4'
+                stroke='#7B31C6'
+                stroke-width='3'
+        />
+        <circle cx='33' cy='2' r='4.5' stroke='#D9B7FF' stroke-width='3' />
+        <path
+                d='M174.803 -1.88349C174.052 -2.76063 174.532 -4.12179 175.667 -4.33359L187.379 -6.51882C188.514 -6.73062 189.453 -5.6342 189.069 -4.54526L185.105 6.68983C184.721 7.77876 183.302 8.04351 182.551 7.16637L174.803 -1.88349Z'
+                stroke='#A54CFF'
+                stroke-width='3'
+        />
+        <rect
+                width='3.17351'
+                height='18.6855'
+                transform='matrix(-0.533214 -0.84598 -0.84598 0.533214 481.5 24.6848)'
+                fill='#A54CFF'
+        />
+        <rect
+                width='4.04622'
+                height='28.7923'
+                transform='matrix(-0.555766 0.831339 0.831339 0.555766 418.334 -8)'
+                fill='#D9B7FF'
+        />
+        <rect
+                width='7.12828'
+                height='7.23114'
+                transform='matrix(-0.555766 0.831339 0.831339 0.555766 411.981 25)'
+                fill='#5F2A94'
+        />
+        <rect
+                width='8.9633'
+                height='9.09263'
+                transform='matrix(-0.555766 0.831339 0.831339 0.555766 501.981 39)'
+                fill='#5F2A94'
+        />
+        <circle
+                r='4.5'
+                transform='matrix(-1 0 0 1 535.5 13.5)'
+                fill='#7B31C6'
+        />
+        <circle
+                r='7'
+                transform='matrix(-1 0 0 1 371.5 -1.5)'
+                stroke='#7B31C6'
+                stroke-width='3'
+        />
+        <circle
+                r='7'
+                transform='matrix(-1 0 0 1 486.5 -1.5)'
+                stroke='#D9B7FF'
+                stroke-width='3'
+        />
+        <path
+                d='M560.491 50.4818C561.242 49.6046 560.762 48.2435 559.627 48.0317L549.061 46.0602C547.926 45.8484 546.987 46.9449 547.371 48.0338L550.947 58.1696C551.331 59.2586 552.75 59.5233 553.501 58.6462L560.491 50.4818Z'
+                stroke='#A54CFF'
+                stroke-width='3'
+        />
+    </g>
+    <defs>
+        <clipPath id='clip0_418_13672'>
+            <rect width='555' height='128' fill='white' />
+        </clipPath>
+    </defs>
+</svg>

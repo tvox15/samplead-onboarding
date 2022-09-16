@@ -1,0 +1,27 @@
+.progress-bar-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+.progress-bar-wrapper > .progress-bar-container {
+  height: 10px;
+  width: 100%;
+  background-color: #DADADA;
+  border-radius: 50px;
+}
+.progress-bar-wrapper > .progress-bar-container > .progress-bar-filler {
+  height: 100%;
+  background-color: #A54CFF;
+  border-radius: inherit;
+  text-align: right;
+  /* transition: width 0.3s ease-in-out; */
+}
+.progress-bar-wrapper > .progress-bar-container > .progress-bar-filler > .progress-bar-label {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=ProgressBar.css.map */

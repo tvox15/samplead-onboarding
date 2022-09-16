@@ -1,0 +1,55 @@
+$color-background: #FBFBFF;
+$color-P100: #ECDBFF;
+$color-P200: #D9B7FF;
+$color-P300: #A54CFF;
+$color-P400: #7B31C6;
+$color-P500: #5F2A94;
+$color-N100: #F2F2FF;
+$color-N200: #DADADA;
+$color-N250: #A7A7A7;
+$color-N300: #7A7A7A;
+$color-N400: #535353;
+$color-N500: #353535;
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-grey150: #CECEDC;
+$color-dark-gray: #4C5862;
+$color-cool-gray-700: #374151;
+$color-turquoise300: #07C3D7;
+
+$color-P200op40: rgba(159, 75, 255, 0.4);
+$color-P200op20: rgba(159, 75, 255, 0.2);
+$color-white40op: rgba(255, 255, 255, 0.4);
+$color-white20op: rgba(255, 255, 255, 0.2);
+
+$color-warning: #F68634;
+$color-danger100: #EA234F;
+$color-success100: #EA234F;
+
+$background-primary-gradient-light: linear-gradient(180deg, #A93BFF60 0%, #8834FF60 100%), #DADADA;
+$background-primary-gradient: linear-gradient(180deg, #A93BFF 0%, #8834FF 100%), #DADADA;
+$background-success-100: linear-gradient(0deg, #22C56D, #22C56D), #2ED47A;
+$background-success-200: linear-gradient(0deg, #007D39, #007D39), #2ED47A;
+$background-success-300: linear-gradient(0deg, #005A29, #005A29), #2ED47A;
+$background-warning-100: linear-gradient(0deg, #F68634, #F68634), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+$background-warning-200: linear-gradient(0deg, #DE5E00, #DE5E00), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+$background-warning-300: linear-gradient(0deg, #A34500, #A34500), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+$background-danger-100: linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+$background-danger-200: linear-gradient(0deg, #B22645, #B22645), linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+$background-danger-300: linear-gradient(0deg, #78001B, #78001B), linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+
+$top-nav-height: 70px;
+$top-nav-item-gap: 20px;
+$nav-logo-width: 140px;
+$sidebar-width: 100px;
+$campaigns__main--width: 1184px;
+$campaigns__main--inner-width: 550.51px;
+$gap-10: 10px;
+$gap-20: 20px;
+$gap-32: 32px;
+
+$button-height: 36px;
+$radius-4: 4px;
+$radius-6: 6px;
+
+$test-border: 1px solid black;

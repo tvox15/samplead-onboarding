@@ -1,0 +1,221 @@
+@import '../../styles/base';
+
+$button-font-family: 'Poppins';
+$button-font-weight: 500;
+$button-font-size: 14px;
+$button-line-height: 20px;
+
+.button__container {
+	position: relative;
+	//border: 1px solid red;
+
+	& div.button__menu {
+		//border: 1px solid blue;
+		position: absolute;
+		top: 59px; //36(button height) + 23(gap)
+		left: -27px;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: $color-N100;
+		border-radius: $radius-6;
+		filter: drop-shadow(0px 4px 8px rgba(167, 167, 167, 0.5));
+
+		& > ul {
+			padding: 12px 15px;
+			list-style: none;
+
+			& > li {
+				width: 140px;
+				color: $color-P300;
+				cursor: pointer;
+
+				&:hover {
+					color: $color-P500;
+				}
+			}
+		}
+	}
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	height: $button-height;
+	padding: 8px 16px;
+
+	border: 1px solid transparent;
+	border-radius: $radius-4;
+
+	font-family: $button-font-family;
+	font-style: normal;
+	font-weight: $button-font-weight;
+	font-size: $button-font-size;
+	line-height: $button-line-height;
+	/* identical to box height, or 143% */
+	font-feature-settings: 'tnum' on, 'lnum' on;
+
+	&.button--primary {
+		background: $color-P300;
+		color: $color-white;
+
+		&:hover {
+			background: $color-P400;
+		}
+
+		&:active {
+			background: $color-P500;
+		}
+
+		&:disabled {
+			background: $color-N200;
+		}
+	}
+
+	&.button--secondary {
+		background: transparent;
+		color: $color-P300;
+		border: solid 1px $color-P300;
+
+		&:hover {
+			background: $color-N100;
+		}
+
+		&:active {
+			background: $color-N100;
+			color: $color-P500;
+			border-color: $color-P500;
+		}
+
+		&:disabled {
+			color: $color-white;
+			background: $color-N200;
+			border: 1px solid $color-white;
+		}
+	}
+
+	&.button--primary-white {
+		color: $color-P300;
+		background: $color-white;
+
+		&:hover {
+			background: linear-gradient(0deg, rgba(159, 75, 255, 0.2), rgba(159, 75, 255, 0.2)), #FFFFFF;
+		}
+
+		&:active {
+			background: linear-gradient(0deg, rgba(159, 75, 255, 0.4), rgba(159, 75, 255, 0.4)), #FFFFFF;
+		}
+
+		&:disabled {
+			background: $color-white;
+			color: $color-N200;
+		}
+	}
+
+	&.button--secondary-white {
+		color: $color-white;
+		border: solid 1px $color-white;
+
+		&:hover {
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #A54CFF;
+		}
+
+		&:active {
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), #9F4BFF;
+		}
+
+		&:disabled {
+			background: $color-N200;
+		}
+	}
+
+	&.button--link {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: transparent;
+		color: $color-P300;
+		font-weight: 500;
+		column-gap: 13.92px;
+		padding: 0;
+
+		&:disabled {
+			color: $color-N250;
+		}
+	}
+
+	&.button--danger {
+		background: $background-danger-100;
+		color: $color-white;
+
+		&:hover {
+			background: $background-danger-200;
+		}
+
+		&:active {
+			background: $background-danger-300;
+		}
+
+		&:disabled {
+			background: $color-N200;
+		}
+	}
+
+	&.button--kebab-menu {
+		background: transparent;
+		width: 44px;
+		//height: 100%;
+		color: $color-N500;
+
+		display: flex;
+		justify-content: center;
+		padding: 9.45px 18.65px;
+
+		text-align: center;
+		align-self: center;
+
+		& .button__content {
+			background: url("../../assets/images/spritesheet.png") no-repeat -20px -460px;
+			width: 5px;
+			height: 18px;
+		}
+
+		&:active {
+			background: $color-N100;
+		}
+	}
+
+	& > .button__content {
+		display: flex;
+		align-items: center;
+		width: max-content;
+	}
+
+	&.borderless {
+		border-color: transparent;
+	}
+}
+
+.button__notification {
+	position: absolute;
+	top: -10px;
+	right: -7px;
+	width: 24px;
+	height: 24px;
+	font-size: 14px;
+	border-radius: 50%;
+	background: $background-danger-100;
+	color: $color-white;
+	z-index: 1;
+	user-select: none;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

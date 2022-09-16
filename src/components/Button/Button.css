@@ -1,0 +1,177 @@
+.button__container {
+	position: relative;
+}
+.button__container div.button__menu {
+	position: absolute;
+	top: 59px;
+	left: -27px;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F2F2FF;
+	border-radius: 6px;
+	filter: drop-shadow(0px 4px 8px rgba(167, 167, 167, 0.5));
+}
+.button__container div.button__menu > ul {
+	padding: 12px 15px;
+	list-style: none;
+}
+.button__container div.button__menu > ul > li {
+	width: 140px;
+	color: #A54CFF;
+	cursor: pointer;
+}
+.button__container div.button__menu > ul > li:hover {
+	color: #5F2A94;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	height: 36px;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+	font-feature-settings: "tnum" on, "lnum" on;
+}
+.button.button--primary {
+	background: #8834FF;
+	color: #FFFFFF;
+}
+.button.button--primary:hover {
+	background: #7B31C6;
+}
+.button.button--primary:active {
+	background: #5F2A94;
+}
+.button.button--primary:disabled {
+	background: #DADADA;
+}
+.button.button--secondary {
+	background: transparent;
+	color: #A54CFF;
+	border: solid 1px #A54CFF;
+}
+.button.button--secondary:hover {
+	background: #F2F2FF;
+}
+.button.button--secondary:active {
+	background: #F2F2FF;
+	color: #5F2A94;
+	border-color: #5F2A94;
+}
+.button.button--secondary:disabled {
+	color: #FFFFFF;
+	background: #DADADA;
+	border: 1px solid #FFFFFF;
+}
+.button.button--primary-white {
+	color: #A54CFF;
+	background: #FFFFFF;
+}
+.button.button--primary-white:hover {
+	background: linear-gradient(0deg, rgba(159, 75, 255, 0.2), rgba(159, 75, 255, 0.2)), #FFFFFF;
+}
+.button.button--primary-white:active {
+	background: linear-gradient(0deg, rgba(159, 75, 255, 0.4), rgba(159, 75, 255, 0.4)), #FFFFFF;
+}
+.button.button--primary-white:disabled {
+	background: #FFFFFF;
+	color: #DADADA;
+}
+.button.button--secondary-white {
+	color: #FFFFFF;
+	border: solid 1px #FFFFFF;
+}
+.button.button--secondary-white:hover {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #A54CFF;
+}
+.button.button--secondary-white:active {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), #9F4BFF;
+}
+.button.button--secondary-white:disabled {
+	background: #DADADA;
+}
+.button.button--link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: transparent;
+	color: #A54CFF;
+	font-weight: 500;
+	column-gap: 13.92px;
+	padding: 0;
+}
+.button.button--link:disabled {
+	color: #A7A7A7;
+}
+.button.button--danger {
+	background: linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+	color: #FFFFFF;
+}
+.button.button--danger:hover {
+	background: linear-gradient(0deg, #B22645, #B22645), linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+}
+.button.button--danger:active {
+	background: linear-gradient(0deg, #78001B, #78001B), linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+}
+.button.button--danger:disabled {
+	background: #DADADA;
+}
+.button.button--kebab-menu {
+	background: transparent;
+	width: 44px;
+	color: #353535;
+	display: flex;
+	justify-content: center;
+	padding: 9.45px 18.65px;
+	text-align: center;
+	align-self: center;
+}
+.button.button--kebab-menu .button__content {
+	background: url("../../assets/images/spritesheet.png") no-repeat -20px -460px;
+	width: 5px;
+	height: 18px;
+}
+.button.button--kebab-menu:active {
+	background: #F2F2FF;
+}
+.button > .button__content {
+	display: flex;
+	align-items: center;
+	width: max-content;
+}
+.button.borderless {
+	border-color: transparent;
+}
+
+.button__notification {
+	position: absolute;
+	top: -10px;
+	right: -7px;
+	min-width: 24px;
+	min-height: 24px;
+	padding: 3px;
+	font-size: 14px;
+	border-radius: 50%;
+	background: linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #EA234F, #EA234F), linear-gradient(0deg, #F68634, #F68634), #2ED47A;
+	color: #FFFFFF;
+	z-index: 1;
+	user-select: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*# sourceMappingURL=Button.css.map */
