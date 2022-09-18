@@ -2,7 +2,7 @@
   "name": "onboarding",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tvox15/github.io/samplead-onboarding",
+  "homepage": "http://tvox15.github.io/samplead-onboarding",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
