@@ -41,7 +41,7 @@ export const pages = [
         options: ["Job change", "News articles", "Linkedin groups", "Linkedin posts", "Linkedin events", "Medium activity", "Twitter tweets", "Funding event"],
         progressBarText: "Target 1/8",
         progressBarFill: "12%",
-    }, 
+    },
     {
         // geolocations
         template: "GeolocationTemplate",
@@ -50,7 +50,7 @@ export const pages = [
         progressBarFill: "25%",
     },
     {
-            // companyHeadcount
+        // companyHeadcount
         template: "CheckboxInputTemplate",
         inputHeader: "Company headcount of your target audience",
         inputKey: "companyHeadcount",
@@ -60,7 +60,7 @@ export const pages = [
         progressBarFill: "37%",
     },
     {
-            // targetIndustries
+        // targetIndustries
         template: "CheckboxInputTemplate",
         inputHeader: "Industries you aim to target",
         inputKey: "targetIndustries",
@@ -100,10 +100,10 @@ export const pages = [
         inputHeader: "Function (Role of the person you are targeting)",
         inputKey: "functionOfTargetRole",
         custom_options: false,
-        options: ["Finance", "Marketing", "Product", "Purchasing", "Engineering", "Operations", "Sales", "Education", "Media and Communication",
-            "Program Management", "Project Management", "Human resources", "Entrepreneurshiop", "Business Development", "Information Technology", "Arts and Design"],
-            progressBarText: "Target 7/8",
-            progressBarFill: "87%",
+        options: ["Finance", "Marketing", "Product", "Purchasing", "Engineering", "Operations", "Sales", "Education", "Program Management", "Project Management",
+            "Human resources", "Entrepreneurshiop", "Business Development", "Information Technology", "Arts and Design", "Media and Communication"],
+        progressBarText: "Target 7/8",
+        progressBarFill: "87%",
     },
     // targetPersonaDescription
     {
@@ -198,8 +198,8 @@ export const pages = [
         progressBarText: "Past Experience 7/8",
         progressBarFill: "88%",
     },
-    {   
-         // marketingMaterials: file upload
+    {
+        // marketingMaterials: file upload
         template: "MarketingMaterialsPage",
         progressBarText: "Past Experience 8/8",
         progressBarFill: "100%",

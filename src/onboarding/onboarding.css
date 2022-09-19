@@ -54,10 +54,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0px 0px;
+    padding: 150px 0px 0px;
 
     width: 80%;
-    height: 548px;
+    height: 725px;
     /* border: 1px solid #000000; */
 
 
@@ -271,7 +271,7 @@
     color: #FFFFFF
 }
 
-.checkbox-input-wrapper {}
+/* .checkbox-input-wrapper {} */
 
 
 .subheader {
