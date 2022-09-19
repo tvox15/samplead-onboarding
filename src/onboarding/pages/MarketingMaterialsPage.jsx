@@ -64,7 +64,7 @@ const MarketingMaterialsPage = ({ progressBarText, progressBarFill, handleNavCli
 
 
                 <div>
-                    {files ? <div class="uploaded-file-list-container">
+                    {files ? <div className="uploaded-file-list-container">
                         {files.map((file, index) => {
                             return <p key={index} className="uploaded-files">{file.name}</p>
                         })}

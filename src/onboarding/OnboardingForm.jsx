@@ -143,22 +143,25 @@ const OnboardingForm = () => {
 
     return (
         <div className="page-container">
-            <LoadingBar
+           {/*  <LoadingBar
                 color='#5F2A94'
                 progress={progress}
                 height={3}
                 transitionTime={100}
                 onLoaderFinished={() => setProgress(0)}
-            />
+            /> */}
             <div className="page-header">
-                <div className="page-header-title">
+                <div className="page-header-image">
                     <img src={logo} alt="logo" />
                 </div>
-                {/*   <div className="page-header-progress">
-                    <div className="page-header-progress-bar">
-                        <ProgressBar label="test" progress="25" />
+                <div className="progress-bar-container">
+                    <div className="page-header-progress">
+                        {currentPage !== 0 && <div className="page-header-progress-bar">
+                            <ProgressBar label={pages[currentPage].progressBarText} progress={pages[currentPage].progressBarFill} />
+                        </div>}
                     </div>
-                </div> */}
+                </div>
+
             </div>
 
             {get_current_page(currentPage)}
