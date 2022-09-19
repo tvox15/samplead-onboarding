@@ -5,7 +5,7 @@ import "../onboarding.css";
 
 
 
-const MultipleInputTemplate = ({ inputHeader, inputKey, handleNavClick, addText, placeholder, input_limit, subheaderText = null }) => {
+const MultipleInputTemplate = ({ inputHeader, inputKey,  handleNavClick, addText, placeholder, input_limit,  progressBarText, progressBarFill, subheaderText = null }) => {
     const [inputValue, setInputValue] = useState(["", ""]);
     const [errorMsg, setErrorMsg] = useState("");
 
@@ -27,7 +27,7 @@ const MultipleInputTemplate = ({ inputHeader, inputKey, handleNavClick, addText,
             }
         }
 
-        if (hasError) return;
+       // if (hasError) return;
         let response_obj = [{
             key: inputKey,
             value: inputValue
@@ -53,7 +53,7 @@ const MultipleInputTemplate = ({ inputHeader, inputKey, handleNavClick, addText,
                 <div className="input-header">
                     <div className="input-header-text"><p>{inputHeader}</p></div>
                 </div>
-                {subheaderText && <div className="subheader margin-y-low centered">
+                {subheaderText && <div className="subheader margin-y-low centered fit-to-width">
                     <div className="subheader-text"><p>{subheaderText}</p></div>
                 </div>}
                 {inputValue.map((value, index) => {

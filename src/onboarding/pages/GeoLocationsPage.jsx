@@ -8,7 +8,7 @@ import '../onboarding.css';
 
 
 // { inputHeader, inputKey, options, handleNavClick, customOptions= false }
-const GeoLocationsPage = ({ handleNavClick, options }) => {
+const GeoLocationsPage = ({ handleNavClick, options, progressBarText, progressBarFill }) => {
     const [geoLocations, setGeoLocations] = useState([]); // for checkboxes
 
     const [includeSpecificTerritories, setIncludeSpecificTerritories] = useState(false);

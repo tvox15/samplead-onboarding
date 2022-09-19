@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ProgressBar from '../components/ProgressBar/ProgressBar';
 import "./onboarding.css";
 import logo from "../assets/images/logo.png";
+import LoadingBar from 'react-top-loading-bar'
 
 import { pages } from './PageData';
 import SingleInputTemplate from './templates/SingleInputTemplate';
@@ -16,6 +17,7 @@ import TargetTitlesPage from './pages/TargetTitlesPage';
 const OnboardingForm = () => {
 
     const [currentPage, setCurrentPage] = useState(0);
+    const [progress, setProgress] = useState(0);
 
     const [formAnswers, setFormAnswers] = useState({
         fullName: "",
@@ -24,6 +26,11 @@ const OnboardingForm = () => {
         companyWebsite: "",
 
     });
+
+    useEffect(() => {
+        setProgress((currentPage + 1) * 100 / pages.length);
+    }, [currentPage])
+
 
     const nextPage = () => {
         setCurrentPage(currentPage + 1);
@@ -73,6 +80,8 @@ const OnboardingForm = () => {
                     inputHeader={page.inputHeader}
                     inputKey={page.inputKey}
                     subheaderText={page.subheaderText}
+                    progressBarText={page.progressBarText}
+                    progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
             case "MultipleInputTemplate":
@@ -84,6 +93,8 @@ const OnboardingForm = () => {
                     addText={page.addText}
                     input_limit={page.input_limit}
                     placeholder={page.placeholder}
+                    progressBarText={page.progressBarText}
+                    progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
             case "CheckboxInputTemplate":
@@ -93,17 +104,23 @@ const OnboardingForm = () => {
                     inputKey={page.inputKey}
                     options={page.options}
                     custom_options={page.custom_options}
+                    progressBarText={page.progressBarText}
+                    progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
             case "GeolocationTemplate":
                 return <GeoLocationsPage
                     key={currentPage}
                     options={page.options}
+                    progressBarText={page.progressBarText}
+                    progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
             case "TargetTitlesPage":
                 return <TargetTitlesPage
                     key={currentPage}
+                    progressBarText={page.progressBarText}
+                    progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
         }
@@ -112,6 +129,13 @@ const OnboardingForm = () => {
 
     return (
         <div className="page-container">
+            <LoadingBar
+                color='#5F2A94'
+                progress={progress}
+                height={3}
+                transitionTime={100}
+                onLoaderFinished={() => setProgress(0)}
+            />
             <div className="page-header">
                 <div className="page-header-title">
                     <img src={logo} alt="logo" />

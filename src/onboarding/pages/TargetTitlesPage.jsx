@@ -6,7 +6,7 @@ import "../onboarding.css";
 
 
 
-const TargetTitlesPage = ({ handleNavClick }) => {
+const TargetTitlesPage = ({ handleNavClick,  progressBarText, progressBarFill }) => {
 
     const max_titles = 3;
 

@@ -3,7 +3,7 @@ import NavButtons from '../../components/NavButtons/NavButtons'
 import { remove_or_add_from_array } from '../../utils/utils';
 import "../onboarding.css";
 
-const CheckboxInputTemplate = ({ inputHeader, inputKey, options, handleNavClick, customOptions = false }) => {
+const CheckboxInputTemplate = ({ inputHeader, inputKey, options,  progressBarText, progressBarFill, handleNavClick, customOptions = false }) => {
     const [inputValue, setInputValue] = useState([]);
     const [errorMsg, setErrorMsg] = useState("");
 

@@ -3,7 +3,7 @@ import NavButtons from '../../components/NavButtons/NavButtons'
 import { validate_email } from "../../utils/utils";
 import "../onboarding.css";
 
-const SingleInputTemplate = ({ inputHeader, inputKey, handleNavClick, type = "text", subheaderText = null }) => {
+const SingleInputTemplate = ({ inputHeader, inputKey,  progressBarText, progressBarFill, handleNavClick, type = "text", subheaderText = null }) => {
     const [inputValue, setInputValue] = useState("");
     const [errorMsg, setErrorMsg] = useState("");
 
