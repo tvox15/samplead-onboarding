@@ -11,6 +11,7 @@ import CheckboxInputTemplate from './templates/CheckboxInputTemplate';
 import WelcomePage from './pages/WelcomePage';
 import GeoLocationsPage from './pages/GeoLocationsPage';
 import TargetTitlesPage from './pages/TargetTitlesPage';
+import MarketingMaterialsPage from './pages/MarketingMaterialsPage';
 
 
 
@@ -28,7 +29,7 @@ const OnboardingForm = () => {
     });
 
     useEffect(() => {
-        setProgress((currentPage + 1) * 100 / pages.length);
+        setProgress(((currentPage + 1) * 100 / pages.length) - 1);
     }, [currentPage])
 
 
@@ -123,7 +124,20 @@ const OnboardingForm = () => {
                     progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
+            case "MarketingMaterialsPage":
+                return <MarketingMaterialsPage
+                    key={currentPage}
+                    progressBarText={page.progressBarText}
+                    progressBarFill={page.progressBarFill}
+                    handleNavClick={handleNavClick}
+                />
         }
+    }
+
+    if (currentPage === pages.length) {
+        return (<div className="page-container">
+            Congratulations for completing onboarding!
+        </div>)
     }
 
 
