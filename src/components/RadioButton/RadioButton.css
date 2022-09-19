@@ -4,8 +4,10 @@
   background-color: hsl(272,100%,61%);
   width: 50%;
   text-align: center;
+  accent-color:  white !important;
 }
 
 .radio-label {
   width: 50%;
 }
+ 
