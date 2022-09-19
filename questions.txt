@@ -1,0 +1,1 @@
+1. On the geograpahic locations page, can the user choose multiple specific territories or exclude multiple cities?

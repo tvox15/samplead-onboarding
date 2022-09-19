@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import OnboardingForm from './pages/onboarding/OnboardingForm';
+import OnboardingForm from './onboarding/OnboardingForm';
 
 
 function App() {
   return (
-        <OnboardingForm />
+    <OnboardingForm />
   );
 }
 

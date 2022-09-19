@@ -33,3 +33,14 @@ export const validate_email = (email) => {
 	const re = /\S+@\S+\.\S+/;
 	return re.test(email);
 }
+
+export const remove_or_add_from_array = (array, value) => {
+    // if inside array, remove it
+    if (array.includes(value)) {
+        return array.filter((item) => item !== value);
+    }
+    // else add it
+    else {
+        return [...array, value];
+    }
+}

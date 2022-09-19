@@ -1,0 +1,142 @@
+@import '../../styles/base';
+
+$form-container-width: 481px;
+$input-container-padding: 6px 10px;
+
+.input-form-group {
+  //width: $form-container-width;
+  //border: 1px solid green;//TODO: border-test
+  width: 100%;
+  //height: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: $gap-10;
+
+  & label {
+    color: $color-N500
+  }
+
+  & .input-container {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $input-container-padding;
+    background: $color-white;
+    border: 1px solid $color-N200;
+    border-radius: $radius-6;
+    color: $color-N500;
+
+    & input {
+      width: 100%;
+      outline: none;
+      border: none;
+
+      &::placeholder {
+        color: $color-N200;
+      }
+
+      &:focus {
+        border-color: $color-N200;
+      }
+    }
+
+    &:hover {
+      border-color: $color-N400;
+    }
+
+    &:focus-within {
+      border-color: $color-N400;
+    }
+
+    &.warning {
+      border-color: $color-danger100;
+    }
+
+    &.disabled {
+      background: $color-N100;
+      color: $color-N200;
+    }
+  }
+
+  & .input-message {
+    //border: 1px solid blue;//TODO: border-test
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+
+    &.warning {
+      color: $color-danger100;
+    }
+  }
+}
+
+//TODO: make scss like structure
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  padding-bottom: 13px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox input {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+
+  border: 1px solid black;
+  border-radius: $radius-4;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-checkbox:hover input ~ .checkmark {
+  //background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox input:checked ~ .checkmark {
+  //background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 3px;
+  height: 8px;
+  border: solid $color-N400;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

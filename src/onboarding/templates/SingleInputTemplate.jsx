@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import NavButtons from '../../../components/NavButtons/NavButtons'
-import { validate_email } from "../../../utils/utils";
+import NavButtons from '../../components/NavButtons/NavButtons'
+import { validate_email } from "../../utils/utils";
 import "../onboarding.css";
 
 const SingleInputTemplate = ({ inputHeader, inputKey, handleNavClick, type = "text", subheaderText = null }) => {
@@ -18,7 +18,7 @@ const SingleInputTemplate = ({ inputHeader, inputKey, handleNavClick, type = "te
         let hasError = false;
         // validate input
         if (action === "next") {
-            if (inputValue.length === 0 || inputValue.length > 100) {
+            if (inputValue.length === 0) {
                 setErrorMsg("Please enter a value");
                 hasError = true;
             }
@@ -31,10 +31,13 @@ const SingleInputTemplate = ({ inputHeader, inputKey, handleNavClick, type = "te
             }
         }
 
-       if (hasError) return;
-
-        handleNavClick(action, inputKey, inputValue);
-        setInputValue("")
+        //if (hasError) return;
+        let response_obj = [{
+            key: inputKey,
+            value: inputValue
+        }]
+        handleNavClick(action, response_obj);
+ 
     }
 
     return (
@@ -43,7 +46,7 @@ const SingleInputTemplate = ({ inputHeader, inputKey, handleNavClick, type = "te
                 <div className="input-header">
                     <div className="input-header-text"><p>{inputHeader}</p></div>
                 </div>
-                {subheaderText && <div className="subheader">
+                {subheaderText && <div className={`subheader centered`}>
                     <div className="subheader-text"><p>{subheaderText}</p></div>
                 </div>}
                 <div className="input-caption-container">
