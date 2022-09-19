@@ -57,3 +57,5 @@ export const LeadStatus = {
 	Active: 2,
 	Removed: 3
 };
+
+export const DISABLE_ERRORS = true;

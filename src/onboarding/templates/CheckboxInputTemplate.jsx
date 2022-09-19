@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import NavButtons from '../../components/NavButtons/NavButtons'
 import { remove_or_add_from_array } from '../../utils/utils';
+import { DISABLE_ERRORS } from '../../utils/constants';
+
 import "../onboarding.css";
 
 const CheckboxInputTemplate = ({ inputHeader, inputKey, options,  progressBarText, progressBarFill, handleNavClick, customOptions = false }) => {
@@ -21,7 +23,7 @@ const CheckboxInputTemplate = ({ inputHeader, inputKey, options,  progressBarTex
                 hasError = true;
             }
         }
-        // if (hasError) return;
+        if (hasError && !DISABLE_ERRORS) return;
 
         let response_obj = [{
             key: inputKey,

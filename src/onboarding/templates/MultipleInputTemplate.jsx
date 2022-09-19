@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FormInput } from '../../components/Form/Form';
 import NavButtons from '../../components/NavButtons/NavButtons'
+import { DISABLE_ERRORS } from '../../utils/constants';
 import "../onboarding.css";
 
 
@@ -27,7 +28,7 @@ const MultipleInputTemplate = ({ inputHeader, inputKey,  handleNavClick, addText
             }
         }
 
-       // if (hasError) return;
+       if (hasError && !DISABLE_ERRORS) return;
         let response_obj = [{
             key: inputKey,
             value: inputValue

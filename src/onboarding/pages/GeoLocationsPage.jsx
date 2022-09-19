@@ -3,6 +3,7 @@ import { FormInput } from '../../components/Form/Form';
 import RadioButton from '../../components/RadioButton';
 import NavButtons from '../../components/NavButtons/NavButtons';
 import { remove_or_add_from_array } from '../../utils/utils';
+import { DISABLE_ERRORS } from '../../utils/constants';
 
 import '../onboarding.css';
 
@@ -38,7 +39,7 @@ const GeoLocationsPage = ({ handleNavClick, options, progressBarText, progressBa
                 hasError = true;
             }
         }
-        if (hasError) return;
+         if (hasError && !DISABLE_ERRORS) return;
         let response_obj = [
             {
                 key: "geolocations",
