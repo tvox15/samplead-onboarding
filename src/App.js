@@ -1,18 +1,25 @@
 import './App.css';
 import OnboardingForm from './routes/Onboarding/OnboardingForm';
-import DashboardPage from './routes/DashboardNew/DashboardPage';
+/* import DashboardPage from './routes/DashboardNew/DashboardPage';
 import CampaignPage from './routes/CampaignsPage';
 import SettingsPage from './routes/Settings/SettingsPage';
 import LoggedInTemplate from './Templates/LoggedInTemplate';
 
 import Route from './components/Router/Route';
-import Link from './components/Router/Link';
+import Link from './components/Router/Link'; */
 
 function App() {
   return (
-    <>
+
          <OnboardingForm />
-      {/* <Route path="/dashboard">
+      
+   
+  );
+}
+
+export default App;
+
+/* <Route path="/dashboard">
         <LoggedInTemplate>
           <DashboardPage />
         </LoggedInTemplate>
@@ -39,9 +46,4 @@ function App() {
         <br></br>
         <Link href="/settings">settings</Link>
         <br></br>
-      </Route> */}
-    </>
-  );
-}
-
-export default App;
+      </Route> */
