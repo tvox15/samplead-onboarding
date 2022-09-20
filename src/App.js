@@ -30,7 +30,7 @@ function App() {
       <Route path="/onboarding">
         <OnboardingForm />
       </Route>
-      <Route path="/">
+      <Route path="/index">
         Samplead App
         <br></br>
         <Link href="dashboard">dashboard</Link>
