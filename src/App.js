@@ -1,11 +1,12 @@
 import './App.css';
 import OnboardingForm from './routes/Onboarding/OnboardingForm';
-import Route from './components/Router/Route';
 import DashboardPage from './routes/DashboardNew/DashboardPage';
 import CampaignPage from './routes/CampaignsPage';
 import SettingsPage from './routes/Settings/SettingsPage';
-import Link from './components/Router/Link';
 import LoggedInTemplate from './Templates/LoggedInTemplate';
+
+import Route from './components/Router/Route';
+import Link from './components/Router/Link';
 
 function App() {
   return (
@@ -33,9 +34,11 @@ function App() {
       <Route path="/index">
         Samplead App
         <br></br>
-        <Link href="dashboard">dashboard</Link>
+        <Link href="/dashboard">dashboard</Link>
         <br></br>
-        <Link href="onboarding">onboarding</Link>
+        <Link href="/onboarding">onboarding</Link>
+        <br></br>
+        <Link href="/settings">settings</Link>
         <br></br>
       </Route>
     </>

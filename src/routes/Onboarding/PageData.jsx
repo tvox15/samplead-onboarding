@@ -101,7 +101,7 @@ export const pages = [
         inputKey: "functionOfTargetRole",
         custom_options: false,
         options: ["Finance", "Marketing", "Product", "Purchasing", "Engineering", "Operations", "Sales", "Education", "Program Management", "Project Management",
-            "Human resources", "Entrepreneurshiop", "Business Development", "Information Technology", "Arts and Design", "Media and Communication"],
+            "Human resources", "Entrepreneurship", "Business Development", "Information Technology", "Arts and Design", "Media and Communication"],
         progressBarText: "Target 7/8",
         progressBarFill: 87,
     },
