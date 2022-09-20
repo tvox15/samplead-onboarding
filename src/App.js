@@ -11,9 +11,8 @@ import Link from './components/Router/Link';
 function App() {
   return (
     <>
-
-
-      <Route path="/dashboard">
+         <OnboardingForm />
+      {/* <Route path="/dashboard">
         <LoggedInTemplate>
           <DashboardPage />
         </LoggedInTemplate>
@@ -29,7 +28,7 @@ function App() {
         </LoggedInTemplate>
       </Route>
       <Route path="/onboarding">
-        <OnboardingForm />
+   
       </Route>
       <Route path="/index">
         Samplead App
@@ -40,7 +39,7 @@ function App() {
         <br></br>
         <Link href="/settings">settings</Link>
         <br></br>
-      </Route>
+      </Route> */}
     </>
   );
 }
