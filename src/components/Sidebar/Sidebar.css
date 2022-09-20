@@ -1,0 +1,55 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  top: 70px;
+  overflow-x: hidden;
+  background-color: #F2F2FF;
+}
+.sidebar.left {
+  left: 0;
+}
+.sidebar.right {
+  right: 0;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  row-gap: 16px;
+  margin: 62px 0;
+}
+
+.sidebar__link {
+  width: 24px;
+  height: 22px;
+  background-color: #7A7A7A;
+  align-self: center;
+}
+.sidebar__link.active {
+  width: 100px;
+  height: 55px;
+}
+.sidebar__link.dashboard {
+  background: url("../../assets/images/spritesheet.png") no-repeat -20px -200px;
+}
+.sidebar__link.dashboard.active {
+  background: url("../../assets/images/spritesheet.png") no-repeat -180px -60px;
+}
+.sidebar__link.campaigns {
+  background: url("../../assets/images/spritesheet.png") no-repeat -20px -240px;
+}
+.sidebar__link.campaigns.active {
+  background: url("../../assets/images/spritesheet.png") no-repeat -180px -120px;
+}
+.sidebar__link.discovery {
+  background: url("../../assets/images/spritesheet.png") no-repeat -60px -200px;
+}
+.sidebar__link.discovery.active {
+  background: url("../../assets/images/spritesheet.png") no-repeat -180px -120px;
+}
+
+/*# sourceMappingURL=Sidebar.css.map */
