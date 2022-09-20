@@ -1,0 +1,73 @@
+@import '../../styles/base';
+
+.campaign-card-container {
+	position: relative;
+}
+
+.campaign-card {
+	width: 380px;
+	height: 196px;
+	padding: 32px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background: $color-white;
+	border: 1px solid $color-N200;
+	border-radius: $radius-6;
+}
+
+.campaign-card-suggestion {
+	color: white;
+	background-color: red;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.campaign-card-header {
+	width: 100%;
+	height: 48px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 20px;
+
+	& .campaign-card-title {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		align-items: flex-start;
+
+		& .samplead-body--large {
+			color: $color-N500
+		}
+
+		& .samplead-body {
+			color: $color-N300
+		}
+	}
+
+	& .more-menu {
+		align-self: flex-start;
+	}
+}
+
+.campaign-card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-right: 12.58px;
+
+	& .button {
+		font-size: 14px;
+	}
+}

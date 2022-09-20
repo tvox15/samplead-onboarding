@@ -1,0 +1,28 @@
+.dropzone-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+.dropzone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: inherit;
+  width: 100%;
+  border: 2px dashed #DADADA;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.dropzone p {
+  color: #DADADA;
+  text-align: center;
+  width: 266.77px;
+  white-space: pre-wrap;
+}
+
+/*# sourceMappingURL=DropzoneComponent.css.map */

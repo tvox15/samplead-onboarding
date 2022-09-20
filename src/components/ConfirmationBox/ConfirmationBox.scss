@@ -1,0 +1,28 @@
+@import '../../styles/base';
+
+div.confirmationBox {
+  width: 555px;
+  height: 180px;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: $radius-6;
+
+  & > div.confirmationBox__title {
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+  }
+
+  & > div.confirmationBox__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+}

@@ -4,13 +4,10 @@ import Sidebar from '../components/Sidebar'
 
 export default function Campaign() {
   return (
-    <>
-      <Header />
-      <Sidebar side="left" />
+    
     <div>
       Campaign
     </div>
-
-      </>
+ 
   )
 }

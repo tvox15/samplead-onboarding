@@ -1,0 +1,29 @@
+@use '../../styles/base';
+
+.dropzone-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;//TODO: make this dynamic
+}
+
+.dropzone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: inherit;
+  width: 100%;
+  border: 2px dashed base.$color-N200;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  & p {
+    color: base.$color-N200;
+    text-align: center;
+    width: 266.77px;
+    white-space: pre-wrap;
+  }
+}

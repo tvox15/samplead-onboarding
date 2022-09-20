@@ -1,0 +1,73 @@
+.campaign-card-container {
+  position: relative;
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+.campaign-card {
+  width: 380px;
+  height: 196px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  border-radius: 6px;
+}
+
+.campaign-card-suggestion {
+  color: white;
+  background-color: red;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.campaign-card-header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.campaign-card-header .campaign-card-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.campaign-card-header .campaign-card-title .samplead-body--large {
+  color: #353535;
+}
+
+.campaign-card-header .campaign-card-title .samplead-body {
+  color: #7A7A7A;
+}
+
+.campaign-card-header .more-menu {
+  align-self: flex-start;
+}
+
+.campaign-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 12.58px;
+}
+
+.campaign-card-footer .button {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=CampaignCard.css.map */

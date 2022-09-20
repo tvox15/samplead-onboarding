@@ -14,7 +14,12 @@ import HelpDialog from "../HelpDialog";
 import "./Header.css";
 
 const Header = props => {
-	const { user } = props;
+	// const { user } = props;
+	const user = {
+		image: {
+			url: avatar,
+		}
+	}
 	const [showHelp, setShowHelp] = useState(false);
 	//const dispatch = useDispatch();
 
@@ -35,12 +40,12 @@ const Header = props => {
 				<Link href={PATH_HOME} className="nav-logo">
 					{" "}
 				</Link>
-				<Link href="/onboarding"  >
+				{/* <Link href="/onboarding"  >
 					Onboarding
 				</Link>
 				<Link href="/dashboard"  >
 					Dashboard
-				</Link>
+				</Link> */}
 				{
 					process.env.REACT_APP_ENV_NAME !== 'PRODUCTION' &&
 					<div style={{ color: 'red' }}>{process.env.REACT_APP_ENV_NAME.toUpperCase()}</div>
@@ -50,6 +55,9 @@ const Header = props => {
 				{
 					user &&
 					<ul className="nav-menu">
+						<Link href="/settings" >
+							<li className="nav-item nav-item--settings"></li>
+						</Link>
 						<li className="nav-item nav-item--help" onClick={handleHelpClick}>
 							<HelpDialog showHelp={showHelp} setShowHelp={setShowHelp} />
 						</li>
@@ -58,6 +66,7 @@ const Header = props => {
 						<li className="nav-item nav-item--avatar">
 							<img src={user.image_url ? `${process.env.REACT_APP_BACKEND_URL}/images/users/${user.image_url}` : avatar} alt="Avatar" />
 						</li>
+
 
 						<li className="nav-item nav-item--avatar">
 							<KebabMenuButton trigger={<FontAwesomeIcon icon={faChevronDown} size="sm" />} menuItems={[{ label: 'Sign Out', onClick: onSignOut }]} />

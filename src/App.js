@@ -1,24 +1,35 @@
 import './App.css';
 import OnboardingForm from './onboarding/OnboardingForm';
-import Dashboard from './dashboard/Dashboard';
 import Route from './components/Router/Route';
-import Campaign from './dashboard/Campaigns';
+import DashboardPage from './dashboard/DashboardPage';
+import CampaignPage from './dashboard/CampaignsPage';
+import SettingsPage from './dashboard/SettingsPage';
 import Link from './components/Router/Link';
+import DashboardTemplate from './dashboard/DashboardTemplate';
 
 function App() {
   return (
     <>
-    Samplead App
+      {/*  Samplead App
     <br></br>
     <Link href="dashboard">dashboard</Link>
     <br></br>
     <Link href="onboarding">onboarding</Link>
-    <br></br>
+    <br></br> */}
       <Route path="/dashboard">
-        <Dashboard />
+        <DashboardTemplate>
+          <DashboardPage />
+        </DashboardTemplate>
+      </Route>
+      <Route path="/settings">
+        <DashboardTemplate>
+          <SettingsPage />
+        </DashboardTemplate>
       </Route>
       <Route path="/campaign">
-        <Campaign />
+        <DashboardTemplate>
+          <CampaignPage />
+        </DashboardTemplate>
       </Route>
       <Route path="/onboarding">
         <OnboardingForm />

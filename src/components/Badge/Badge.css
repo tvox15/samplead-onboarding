@@ -1,0 +1,32 @@
+.badge {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 6px;
+  cursor: pointer;
+  user-select: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-feature-settings: "tnum" on, "lnum" on;
+  border-radius: 2px;
+  color: #FFFFFF;
+}
+.badge.default {
+  background-color: #2F2F2F;
+}
+.badge.success {
+  background: linear-gradient(0deg, #22C56D, #22C56D), #2ED47A;
+}
+.badge.warning {
+  background: #F68634;
+}
+.badge.danger {
+  background: #EA234F;
+}
+
+/*# sourceMappingURL=Badge.css.map */

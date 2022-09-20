@@ -23,8 +23,9 @@ const Sidebar = ({ side }) => (
 	<nav className={`sidebar ${side}`}>
 		<div className="sidebar-container">
 			{
-				links.map(({ path, className }) => (
+				links.map(({ path, className }, index) => (
 					<Link
+						key={index}
 						href={path}
 						className={`sidebar__link ${className}`}
 					/>

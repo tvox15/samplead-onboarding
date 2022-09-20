@@ -1,0 +1,38 @@
+@import '../../styles/base';
+
+.badge {
+	height: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 6px;
+	cursor: pointer;
+	user-select: none;
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-feature-settings: 'tnum' on, 'lnum' on;
+
+	border-radius: 2px;
+	color: $color-white;
+
+	&.default {
+		background-color: #2F2F2F;
+	}
+
+	&.success {
+		background: $background-success-100;
+	}
+
+	&.warning {
+		background: $color-warning;
+	}
+
+	&.danger {
+		background: $color-danger100;
+	}
+}
