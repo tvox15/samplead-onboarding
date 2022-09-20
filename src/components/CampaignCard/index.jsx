@@ -59,7 +59,7 @@ const CampaignCard = props => {
 							{ title: 'Cancel', type: BUTTON_VARIANT.PRIMARY_WHITE, action: handleModalClose },
 							{ title: 'Delete', type: BUTTON_VARIANT.DANGER, action: doDeleteCampaign }
 						]}
-						message="Are you sure you want do delete this campaigns forever?" />
+						message="Are you sure you want do delete this campaign forever?" />
 				);
 			default:
 				break;

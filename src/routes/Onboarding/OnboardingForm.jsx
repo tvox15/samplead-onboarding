@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import ProgressBar from '../components/ProgressBar/ProgressBar';
+import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import "./onboarding.css";
-import logo from "../assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 import LoadingBar from 'react-top-loading-bar'
 
 import { pages } from './PageData';

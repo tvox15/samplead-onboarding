@@ -17,6 +17,8 @@
     min-width: 100%;
     min-height: 100%;
     padding: 80px;
+    display: flex;
+    flex-direction: row;
     gap: 25px;
 }
 
@@ -25,7 +27,8 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 32px;
 }
 
 .top-wrapper {
@@ -110,7 +113,7 @@
     flex-wrap: wrap;
 }
 
-.campaign-card-wrapper::nth-child(even){
+.campaign-card-wrapper::nth-child(even) {
     justify-content: flex-start;
 }
 
@@ -119,9 +122,62 @@
     flex: .5;
 }
 
- 
-
-
 .right-box {
     width: 30%;
+    padding: 32px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-box-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 0px 26px;
+    gap: 230px;
+    
+    width: 246px;
+    height: 65px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.right-box-header-text {
+    width: 136px;
+height: 21px;
+
+/* Samplead body bold */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+/* Naturals / N300 */
+
+color: #7A7A7A;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.right-box-statistics-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 40px;
 }

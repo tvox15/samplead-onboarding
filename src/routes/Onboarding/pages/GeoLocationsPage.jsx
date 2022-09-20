@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { FormInput } from '../../components/Form/Form';
-import RadioButton from '../../components/RadioButton';
-import NavButtons from '../../components/NavButtons/NavButtons';
-import { remove_or_add_from_array } from '../../utils/utils';
-import { DISABLE_ERRORS } from '../../utils/constants';
+import { FormInput } from '../../../components/Form/Form';
+import RadioButton from '../../../components/RadioButton';
+import NavButtons from '../../../components/NavButtons/NavButtons';
+import { remove_or_add_from_array } from '../../../utils/utils';
+import { DISABLE_ERRORS } from '../../../utils/constants';
 
 import '../onboarding.css';
 

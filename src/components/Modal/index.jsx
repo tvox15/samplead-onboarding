@@ -1,6 +1,8 @@
 import React from 'react';
  // import './Modal.scss';
 import './Modal.css';
+
+
 export const MODAL_TYPE = {
     MANUAL_DISCOVERY: 'manual-discovery',
     EXPORT: 'export',

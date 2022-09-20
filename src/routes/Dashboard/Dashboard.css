@@ -1,0 +1,145 @@
+.dashboard__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard__container {
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px;
+}
+
+.dashboard-content-prospects-title {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dashboard-content-prospects-title-left {
+  color: white;
+  background: black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 7px 11px;
+  margin-right: 1px;
+}
+
+.dashboard-content-prospects-title-right {
+  color: white;
+  background: black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 7px 11px;
+}
+
+.dashboard-content {
+  width: 848px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+.dashboard-content > .dashboard__header {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 0 20px;
+}
+.dashboard-content > .dashboard__header > .dashboard__header--text .samplead-title-1 {
+  color: #353535;
+}
+.dashboard-content > .dashboard__header > .dashboard__header--text .samplead-body--large {
+  color: #535353;
+}
+.dashboard-content > .dashboard__main {
+  padding: 32px 32px 10px;
+  height: 100%;
+  background: white;
+  border-radius: 6px;
+}
+.dashboard-content > .dashboard__main > .dashboard__main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-content > .dashboard__main > .dashboard__main-top > h6.samplead-body--bold {
+  color: #7A7A7A;
+}
+.dashboard-content > .dashboard__main > .dashboard__main-top > div.dashboard__main-top--buttons {
+  display: flex;
+  gap: 10px;
+}
+.dashboard-content > .dashboard__main > .dashboard__main-cards {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.dashboard-content > .dashboard__main > .dashboard__main-cards.no-campaigns {
+  height: 404px;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-content > .dashboard__main > .dashboard__main-cards.no-campaigns p.samplead-body {
+  width: 462px;
+  color: #4C5862;
+}
+
+.dashboard-statistics {
+  width: 311px;
+  padding: 32px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  background: white;
+  border-radius: 6px;
+}
+.dashboard-statistics > .dashboard-statistics--title {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #7A7A7A;
+}
+.dashboard-statistics > .dashboard-statistics-components {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.dashboard-statistics > .dashboard-statistics-components > .dashboard-statistics-comp {
+  height: 135px;
+  padding: 32px 7px 32px 20px;
+  display: flex;
+  align-items: center;
+  background: #FBFBFF;
+  border-radius: 6px;
+}
+.dashboard-statistics > .dashboard-statistics-components > .dashboard-statistics-comp > .dashboard-statistics-comp--icon {
+  margin-right: 20px;
+}
+.dashboard-statistics > .dashboard-statistics-components > .dashboard-statistics-comp > .dashboard-statistics-comp--content {
+  width: 152px;
+}
+.dashboard-statistics > .dashboard-statistics-components > .dashboard-statistics-comp > .dashboard-statistics-comp--content .samplead-title-1, .dashboard-statistics > .dashboard-statistics-components > .dashboard-statistics-comp > .dashboard-statistics-comp--content .samplead-body--bold {
+  color: #535353;
+}
+.dashboard-statistics > .dashboard-statistics-components.empty-stats {
+  justify-content: center;
+  align-items: center;
+  color: #4C5862;
+  padding: 0 20px;
+}
+
+/*# sourceMappingURL=Dashboard.css.map */

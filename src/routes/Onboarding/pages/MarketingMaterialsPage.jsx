@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FileUploader } from "react-drag-drop-files";
-import { DISABLE_ERRORS } from '../../utils/constants';
-import NavButtons from '../../components/NavButtons/NavButtons';
+import { DISABLE_ERRORS } from '../../../utils/constants';
+import NavButtons from '../../../components/NavButtons/NavButtons';
 
 const fileTypes = ["JPEG", "PNG", "GIF", "PDF", "DOCX"];
 

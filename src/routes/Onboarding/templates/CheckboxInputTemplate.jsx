@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import NavButtons from '../../components/NavButtons/NavButtons'
-import { remove_or_add_from_array } from '../../utils/utils';
-import { DISABLE_ERRORS } from '../../utils/constants';
+import NavButtons from '../../../components/NavButtons/NavButtons'
+import { remove_or_add_from_array } from '../../../utils/utils';
+import { DISABLE_ERRORS } from '../../../utils/constants';
 
 import "../onboarding.css";
 

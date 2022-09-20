@@ -1,7 +1,7 @@
 export const campaigns = [{
     id: 1,
     suggestions: 1,
-    type: "event",
+    type: "activity-event",
     title: "campaign 1",
     createdAt: "2020-10-10T12:00:00.000Z",
     messages: 50
@@ -9,7 +9,7 @@ export const campaigns = [{
 {
     id: 2,
     suggestions: 2,
-    type: "discovery",
+    type: "activity-group",
     title: "campaign 2",
     createdAt: "2019-10-10T12:00:00.000Z",
     messages: 40
@@ -17,7 +17,7 @@ export const campaigns = [{
 {
     id: 3,
     suggestions: 2,
-    type: "post",
+    type: "activity-post",
     title: "campaign 3",
     createdAt: "2018-10-10T12:00:00.000Z",
     messages: 30
@@ -25,7 +25,7 @@ export const campaigns = [{
 {
     id: 4,
     suggestions: 2,
-    type: "group",
+    type: "activity-group",
     title: "campaign 4",
     createdAt: "2017-10-10T12:00:00.000Z",
     messages: 20

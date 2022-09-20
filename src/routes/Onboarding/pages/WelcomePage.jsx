@@ -1,5 +1,5 @@
 import React from 'react'
-import NavButtons from '../../components/NavButtons/NavButtons';
+import NavButtons from '../../../components/NavButtons/NavButtons';
 import '../onboarding.css';
 
 export default function WelcomePage({ inputHeader, subheaderText, handleNavClick }) {

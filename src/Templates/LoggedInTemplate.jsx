@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
 
-import './dashboard.css';
+import './LoggedIn.css';
 
 export default function DashboardTemplate({ children }) {
     return (

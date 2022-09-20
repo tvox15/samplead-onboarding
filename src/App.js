@@ -1,38 +1,42 @@
 import './App.css';
-import OnboardingForm from './onboarding/OnboardingForm';
+import OnboardingForm from './routes/Onboarding/OnboardingForm';
 import Route from './components/Router/Route';
-import DashboardPage from './dashboard/DashboardPage';
-import CampaignPage from './dashboard/CampaignsPage';
-import SettingsPage from './dashboard/SettingsPage';
+import DashboardPage from './routes/DashboardNew/DashboardPage';
+import CampaignPage from './routes/CampaignsPage';
+import SettingsPage from './routes/Settings/SettingsPage';
 import Link from './components/Router/Link';
-import DashboardTemplate from './dashboard/DashboardTemplate';
+import LoggedInTemplate from './Templates/LoggedInTemplate';
 
 function App() {
   return (
     <>
-      {/*  Samplead App
-    <br></br>
-    <Link href="dashboard">dashboard</Link>
-    <br></br>
-    <Link href="onboarding">onboarding</Link>
-    <br></br> */}
+
+
       <Route path="/dashboard">
-        <DashboardTemplate>
+        <LoggedInTemplate>
           <DashboardPage />
-        </DashboardTemplate>
+        </LoggedInTemplate>
       </Route>
       <Route path="/settings">
-        <DashboardTemplate>
+        <LoggedInTemplate>
           <SettingsPage />
-        </DashboardTemplate>
+        </LoggedInTemplate>
       </Route>
       <Route path="/campaign">
-        <DashboardTemplate>
+        <LoggedInTemplate>
           <CampaignPage />
-        </DashboardTemplate>
+        </LoggedInTemplate>
       </Route>
       <Route path="/onboarding">
         <OnboardingForm />
+      </Route>
+      <Route path="/">
+        Samplead App
+        <br></br>
+        <Link href="dashboard">dashboard</Link>
+        <br></br>
+        <Link href="onboarding">onboarding</Link>
+        <br></br>
       </Route>
     </>
   );
