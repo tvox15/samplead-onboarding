@@ -331,12 +331,13 @@
     gap: 29px;
     justify-content: center;
     width: 100%;
-    height: 131px;
+    height: 200px;
     /* Inside auto layout */
-
+    margin-top: 10px;
     flex: none;
     order: 1;
     flex-grow: 0;
+    
 }
 
 .full-length-container {
@@ -351,8 +352,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 151px;
-    padding: 50px;
+    height: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     width: auto;
 
 }

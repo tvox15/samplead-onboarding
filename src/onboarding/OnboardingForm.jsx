@@ -42,6 +42,7 @@ const OnboardingForm = () => {
     };
 
     const updateFormAnswers = (key, value) => {
+        // This should change to an HTTP request
         setFormAnswers({ ...formAnswers, [key]: value });
         console.log(formAnswers);
     }
@@ -50,7 +51,7 @@ const OnboardingForm = () => {
 
         // This is where you send the HTTP request to the server
         console.log('action:', action, 'response', response_obj_array);
-        if (action === "previous") {
+        if (action === "previous") { // remove later for live server
             setCurrentPage(currentPage - 1);
             return;
         }
@@ -143,13 +144,13 @@ const OnboardingForm = () => {
 
     return (
         <div className="page-container">
-           {/*  <LoadingBar
+            <LoadingBar
                 color='#5F2A94'
                 progress={progress}
                 height={3}
                 transitionTime={100}
                 onLoaderFinished={() => setProgress(0)}
-            /> */}
+            />
             <div className="page-header">
                 <div className="page-header-image">
                     <img src={logo} alt="logo" />

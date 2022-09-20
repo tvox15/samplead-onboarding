@@ -1,0 +1,55 @@
+.activity-icon {
+  width: 37.25px;
+  height: 40px;
+}
+.activity-icon.event {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -20px;
+}
+.activity-icon.group {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -80px;
+}
+.activity-icon.post {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -140px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+.icon.auto-discovery {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -200px;
+}
+.icon.message-typing {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -260px;
+}
+.icon.export {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -320px;
+}
+.icon.manual {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -380px;
+}
+.icon.empty {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -440px;
+}
+.icon.hot {
+  width: 35px;
+  height: 57px;
+  background: url("../../assets/images/spritesheet.png") -20px -320px;
+}
+.icon.close {
+  width: 10px;
+  height: 10px;
+  background: url("../../assets/images/spritesheet.png") no-repeat -60px -240px;
+}
+.icon.empty-stats {
+  background: url("../../assets/images/spritesheet.png") no-repeat -120px -500px;
+  width: 50px;
+  height: 51px;
+}
+.icon.life-server-ring {
+  background: url("../../assets/images/spritesheet.png") no-repeat -200px -220px;
+  width: 53px;
+  height: 53px;
+}
+
+/*# sourceMappingURL=Icon.css.map */

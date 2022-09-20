@@ -1,0 +1,18 @@
+div.help-dialog {
+  position: absolute;
+  width: 312px;
+  height: 175px;
+  right: 210px;
+  top: 51px;
+  filter: drop-shadow(4px 0px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  background: white;
+  cursor: text;
+}
+
+/*# sourceMappingURL=HelpDialog.css.map */

@@ -1,0 +1,79 @@
+@import '../../styles/base';
+
+.header {
+  position: sticky;
+  background-color: $color-white;
+  top: 0; /* Position the header at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 9990;
+
+  border-bottom: 1px solid $color-grey150;
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: $top-nav-height;
+}
+
+.nav-logo {
+  width: $nav-logo-width;
+  height: 32px;
+  /* top | right | bottom | left */
+  margin: 23.5px 60px 13.5px 46px;
+  background: url('../../assets/images/logo.png');
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+.nav-item {
+  margin-right: $top-nav-item-gap;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &.nav-item--help {
+    background: url('../../assets/images/spritesheet.png') no-repeat -60px -400px;
+  }
+
+  &.nav-item--settings {
+    background: url('../../assets/images/spritesheet.png') no-repeat -20px -400px;
+  }
+
+  &.nav-item--divider {
+    width: 1px;
+    height: 37px;
+    /* top | right | bottom | left */
+    margin: 16.5px 20px 15.5px 10px;
+    border-right: $color-grey150 solid 1px;
+    cursor: default;
+  }
+
+  &.nav-item--avatar {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    color: $color-N200;
+
+    & img {
+      cursor: default;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+    & svg {
+      margin: 0 10px;
+    }
+  }
+}
