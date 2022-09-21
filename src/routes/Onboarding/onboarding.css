@@ -343,7 +343,7 @@
 }
 
 .checkbox-w-wide {
-    width: 1280px;
+    width: 1280px !important;
 }
 
 .checkbox-input-wrapper {
