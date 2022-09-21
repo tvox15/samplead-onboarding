@@ -11,10 +11,10 @@ import SettingsPage from './routes/Settings/SettingsPage';
 function App() {
   return (
 
-    /*  <OnboardingForm /> */
-    <LoggedInTemplate>
+     <OnboardingForm />
+   /*  <LoggedInTemplate>
       <SettingsPage />
-    </LoggedInTemplate>
+    </LoggedInTemplate> */
 
   );
 }
