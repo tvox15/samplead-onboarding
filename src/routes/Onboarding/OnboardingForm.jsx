@@ -107,7 +107,7 @@ const OnboardingForm = () => {
                     placeholder={page.placeholder}
                     checkboxWidth={page.checkboxWidth}
                     columns={page.columns}
-                    
+
                     handleNavClick={handleNavClick}
                 />
             case "GeolocationTemplate":
@@ -133,43 +133,40 @@ const OnboardingForm = () => {
     }
 
     if (currentPage === pages.length) {
-        return (<div className="page-container">
-            Congratulations for completing onboarding!
-        </div>)
+        return (<>
+            <Header logoOnly={true} />
+            <div className="page-container">
+                Congratulations on completing onboarding!
+            </div>
+        </>)
     }
 
 
     return (
         <>
-    <LoadingBar
+            <LoadingBar
                 color='#5F2A94'
                 progress={progress}
                 height={3}
                 transitionTime={100}
                 onLoaderFinished={() => setProgress(0)}
-            />  
-                 <Header logoOnly={true} />
-        <div className="page-container">
-            
-            <div className="page-header">
-         
-             {/*    <div className="page-header-image">
-                    <img src={logo} alt="logo" />
-                </div> */}
-                <div className="progress-bar-container">
-                    <div className="page-header-progress">
-                        {currentPage !== 0 && <div className="page-header-progress-bar">
-                            <ProgressBar label={pages[currentPage].progressBarText} progress={pages[currentPage].progressBarFill} />
-                        </div>}
+            />
+            <Header logoOnly={true} />
+            <div className="page-container">
+                <div className="page-header">
+                    <div className="progress-bar-container">
+                        <div className="page-header-progress">
+                            {currentPage !== 0 && <div className="page-header-progress-bar">
+                                <ProgressBar label={pages[currentPage].progressBarText} progress={pages[currentPage].progressBarFill} />
+                            </div>}
+                        </div>
                     </div>
                 </div>
 
+                {get_current_page(currentPage)}
+
+
             </div>
-
-            {get_current_page(currentPage)}
-
-
-        </div>
         </>);
 
 }
