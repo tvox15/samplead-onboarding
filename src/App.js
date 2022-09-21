@@ -9,6 +9,7 @@ import LoggedInTemplate from './Templates/LoggedInTemplate';
 import SettingsPage from './routes/Settings/SettingsPage';
 
 function App() {
+  
   return (
 
     /*  <OnboardingForm /> */

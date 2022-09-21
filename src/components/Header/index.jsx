@@ -12,6 +12,8 @@ import KebabMenuButton from "../Button/KebabMenuButton";
 import HelpDialog from "../HelpDialog";
 
 import "./Header.css";
+import OnboardingForm from "../../routes/Onboarding/OnboardingForm";
+import Button from "../Button/Button";
 
 const Header = props => {
 	// const { user } = props;
@@ -33,6 +35,14 @@ const Header = props => {
 		// handle signout
 		//	dispatch(userActions.signOut());
 	};
+
+	const [loadOnboarding, setLoadOnboarding] = useState(false);
+	const loadOnboardingFn = () => {
+		setLoadOnboarding(true);
+	}
+	if(loadOnboarding) {
+		return <OnboardingForm />
+	}
 
 	if (logoOnly) {
 		return (
@@ -64,8 +74,8 @@ const Header = props => {
 					<div style={{ color: 'red' }}>{process.env.REACT_APP_ENV_NAME.toUpperCase()}</div>
 				}
 
-
-				{
+				<Button onClick={() => loadOnboardingFn()} className="nav-button" children="Load Onboarding" />
+ 				{
 					user &&
 					<ul className="nav-menu">
 						<Link href="/settings" >
