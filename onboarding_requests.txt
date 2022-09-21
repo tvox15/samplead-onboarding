@@ -2,22 +2,21 @@
 
 
 Notes:
-On the figma, the competitors and influencers page has the main content in a lower position than the other pages on the last row. Was that intentional? 
+On the figma, the competitors and influencers page has the main content in a lower position than the other pages on the last row. Was that intentional?
+Other pages also have the title in different positions.
 
 Feedback:
-1.
+1. Done
 2. Done
 3. Done  
 4. Fixed and put options in the same order as figma
 5. Fixed 
-5B. Added
+5B. Added free text option
 6. Moved to same line and made the text thinner (unbolded). Do you want a limit for the number of titles?
 7. Fixed
 8. 
 9. Fixed. I made it according to the figma so it's not bolded, but I've made the text thinner
-
 10-12 . The data input boxes are the same sizes as the figma
 10-12 Data entry gap increase: fixed
-
 10. I originally put a 3 competitor limit since the subtext says to choose 3, but I can change it to however many you want. I'll put it to 10 for now.
 12. Fixed similar to #10. I'll set the limit to 10 for now.
