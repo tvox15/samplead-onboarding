@@ -565,6 +565,10 @@
         width: 31%;
     }
 
+    .fields-container {
+        flex-direction: column;
+    }
+
     
 }
 

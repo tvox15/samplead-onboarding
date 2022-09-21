@@ -154,10 +154,10 @@
     width: 100%;
     min-width: 1184px;
     height: 602px;
-    
-    
+
+
     /* Inside auto layout */
-    
+
     flex: none;
     order: 2;
     align-self: stretch;
@@ -171,9 +171,9 @@
 }
 
 .checkbox-header-wrapper-text {
-    
+
     height: 17px;
-     
+
 
     font-family: 'Poppins';
     font-style: normal;
@@ -182,7 +182,7 @@
     line-height: 16px;
     /* identical to box height */
 
- 
+
 
     /* Naturals / N500 */
 
@@ -199,11 +199,33 @@
     padding: 0px;
     gap: 10px;
 }
- .checkbox-input-wrapper {
+
+.checkbox-input-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 120px;
     white-space: nowrap;
 
- }
+}
+
+
+@media (max-width: 1300px) {
+
+    .fields-container {
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .edit-field-container>.input-form-group {
+        width: 100%;
+    }
+    .edit-field-container-2 {
+        width: 100%;
+    }
+    .edit-field-container-2>.input-form-group {
+        width: 100%;
+    }
+
+}
