@@ -1,0 +1,46 @@
+Link to the front:
+https://tvox15.github.io/samplead-onboarding/
+
+Comments:
+1.Add a white gap to make the Samplead logo more visible on all pages, see change on figma 
+
+2.The previous button is great- rmove text (“test”)
+
+3.Welcome page- looks like the text is bolded? Should remove bold and make sure all text is in the same row (the word “minutes” need to be on the 2nd row)
+
+4.Company headcount of your target audience page- the different categories should appear in 3 groups of 3 (the same as it appears in the figma)
+
+5.Industries you aim to target- 
+a.the different categories should appear in 3 groups of 3 (the same as it appears in the figma)
+
+B. Add “+ add another industry” button that allow free text.
+
+6.Target Titles For example: "Consultants" needs to be on the same line
+Is the text in bolt?
+After you add another competitor the option to add another competitor should still exist
+
+
+7.Seniority Level- the different categories should appear in 3 groups of 3 (the same as it appears in the figma)
+
+8.Function (Role of the person you are targeting- order is different to the order in figma- change
+
+9.Target persona description-states that manage employee experience..." need to be centerd and not bolded
+
+10.Competitors- 
+the gap between the data entry should be larger (similar to the figma)
+The data entry space itself should be bigger (similar to the figma)
+After you add another competitor the option to add another competitor should still exist
+
+11.Linkedin profiles
+the gap between the data entry should be larger (similar to the figma)
+The data entry space itself should be bigger (similar to the figma)
+
+11.Linkedin groups
+the gap between the data entry should be larger (similar to the figma)
+The data entry space itself should be bigger (similar to the figma)
+12."Perfect" customers
+the gap between the data entry should be larger (similar to the figma)
+The data entry space itself should be bigger (similar to the figma)
+After you add another “perfect customer” the option to add another competitor should still exist
+
+

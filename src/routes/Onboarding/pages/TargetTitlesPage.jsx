@@ -53,7 +53,6 @@ const TargetTitlesPage = ({ handleNavClick, input_limit}) => {
         if (value.length < input_limit) {
             setFn([...value, ""]);
         }
-
     }
 
 

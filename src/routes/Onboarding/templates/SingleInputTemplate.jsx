@@ -50,7 +50,7 @@ const SingleInputTemplate = ({ inputHeader, inputKey,   handleNavClick, type = "
                     <div className="subheader-text"><p>{subheaderText}</p></div>
                 </div>}
                 <div className="input-caption-container">
-                    <input type={type} name={inputKey} className="input-box-text" placeholder={inputHeader} onChange={(e) => update_input_value(e)} />
+                    <input type={type} name={inputKey} className="input-box-text" value={inputValue} placeholder={inputHeader} onChange={(e) => update_input_value(e)} />
                 </div>
                 <div className="input-error-msg">
                     {errorMsg && <div className="error-msg">{errorMsg}</div>}

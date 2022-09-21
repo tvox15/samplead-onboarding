@@ -71,6 +71,8 @@ export const pages = [
         inputHeader: "Industries you aim to target",
         inputKey: "targetIndustries",
         custom_options: true,
+        customInputLimit: 5,
+        placeholder: "Industry",
         options: ["Cyber Security", "Fintech", "B2B Hardware", "Hi-tech", "Internet", "Marketing", "B2B SAAS", "B2B Software", "Libraries"],
         checkboxWidth: "medium",
         columns: 3,

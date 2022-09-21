@@ -43,7 +43,6 @@ const MultipleInputTemplate = ({ inputHeader, inputKey,  handleNavClick, addText
         if (inputValue.length < input_limit) {
             setInputValue([...inputValue, ""]);
         }
-
     }
 
 

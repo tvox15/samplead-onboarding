@@ -140,14 +140,14 @@
 }
 
 .input-caption-text {
-    width: 420px;
+    width: 425px;
     height: 42px;
 
     /* Samplead body */
 
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 14px;
     line-height: 21px;
     display: flex;
@@ -299,7 +299,11 @@
     width: 60%;
 }
 
-/* .checkbox-input-wrapper {} */
+.checkbox-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
 
 
 .subheader {
@@ -395,10 +399,24 @@
 
 .add-custom-option {
     color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+   
+    align-items: center;
+}
+
+.add-custom-option-container {
+     margin-top: 80px;
+}
+
+.link {
     cursor: pointer;
 }
 
-.add-custom-option:hover {
+.link:hover {
     color: #FFC700;
 }
 

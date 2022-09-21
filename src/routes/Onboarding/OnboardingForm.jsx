@@ -101,9 +101,12 @@ const OnboardingForm = () => {
                     inputHeader={page.inputHeader}
                     inputKey={page.inputKey}
                     options={page.options}
-                    custom_options={page.custom_options}
+                    customOptions={page.custom_options}
+                    customInputLimit={page.customInputLimit}
+                    placeholder={page.placeholder}
                     checkboxWidth={page.checkboxWidth}
                     columns={page.columns}
+                    
                     handleNavClick={handleNavClick}
                 />
             case "GeolocationTemplate":
