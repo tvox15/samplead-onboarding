@@ -9,7 +9,7 @@ import '../onboarding.css';
 
 
 // { inputHeader, inputKey, options, handleNavClick, customOptions= false }
-const GeoLocationsPage = ({ handleNavClick, options, checkboxWidth, columns}) => {
+const GeoLocationsPage = ({ handleNavClick, options, checkboxWidth, columns }) => {
 
     const column_class = columns ? `checkbox-col-${columns}` : "";
     const checkbox_width = checkboxWidth ? `checkbox-w-${checkboxWidth}` : "";
@@ -43,7 +43,7 @@ const GeoLocationsPage = ({ handleNavClick, options, checkboxWidth, columns}) =>
                 hasError = true;
             }
         }
-         if (hasError && !DISABLE_ERRORS) return;
+        if (hasError && !DISABLE_ERRORS) return;
         let response_obj = [
             {
                 key: "geolocations",

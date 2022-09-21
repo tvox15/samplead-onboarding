@@ -62,7 +62,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 150px 0px 0px;
+    padding: 100px 0px 0px;
     z-index: 10000;
     width: 80%;
     height: 725px;
@@ -235,22 +235,24 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    
 }
 
 .checkbox-container {
     /* Auto layout */
-    margin-left: 8%;
+   /*  margin-left: 8%; */
     display: flex;
     flex-direction: row;
     padding: 10px;
     gap: 10px;
-    width: 55%;
-    justify-content: space-between;
+   /*  width: 55%; */
+    justify-content: center;
     /* height: 101px;
     height: auto; */
-
+    width: 500px;
     /* Inside auto layout */
     flex-wrap: wrap;
 }
@@ -270,10 +272,10 @@
     font-size: 14px;
     line-height: 21px;
     /* identical to box height */
-
+    columns: 2 auto;
     display: flex;
     align-items: center;
-
+    justify-content: center;
     /*  margin-left: 40px; */
     /*  padding-left: 30px; */
     /* White */
@@ -282,17 +284,19 @@
 }
 
 .checkbox-col-3 {
-    
+    width: 31%;
+    columns: 3 auto;
 }
 .checkbox-col-4 {
     width: 22%;
 }
 .checkbox-w-close {
     justify-content: initial;
-    width: 35%;
+    width: 45%;
 }
 .checkbox-w-medium {
-    width: 30%;
+    min-width: 50%;
+    max-width: 100%;
     margin-left: 0;
 }
 .checkbox-w-wide {
@@ -301,10 +305,19 @@
 
 .checkbox-input-wrapper {
     display: flex;
+    justify-content: flex-start;
+    width: 120px;
+    white-space: nowrap;
+
+}
+
+.checkbox-input-inner-wrapper {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 3px;
 }
-
+ 
 
 .subheader {
     width: 460px;
@@ -403,9 +416,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    cursor: pointer;
+  
    
     align-items: center;
+}
+
+.add-custom-option-text {
+    cursor: pointer;
 }
 
 .add-custom-option-container {

@@ -66,8 +66,8 @@ const MultipleInputTemplate = ({ inputHeader, inputKey,  handleNavClick, addText
                 })}
 
                 {inputValue.length < input_limit &&
-                    <div className="add-custom-option" onClick={() => addExtraField()}>
-                        {addText}
+                    <div className="add-custom-option"  >
+                        <p className="add-custom-option-text link" onClick={() => addExtraField()}>{addText}</p>
                     </div>
                 }
 

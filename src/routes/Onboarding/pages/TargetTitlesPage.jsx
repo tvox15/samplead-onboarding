@@ -8,9 +8,9 @@ import "../onboarding.css";
 
 
 
-const TargetTitlesPage = ({ handleNavClick, input_limit}) => {
+const TargetTitlesPage = ({ handleNavClick, input_limit }) => {
 
- 
+
     const [inputValue, setInputValue] = useState(["", ""]);
     const [excludedTitles, setExcludedTitles] = useState([""]);
     const [excludedTitlesDisabled, setExcludedTitlesDisabled] = useState(true);
@@ -81,8 +81,8 @@ const TargetTitlesPage = ({ handleNavClick, input_limit}) => {
                         </div>)
                 })}
                 {inputValue.length < input_limit &&
-                    <div className="add-custom-option" onClick={() => addExtraField(inputValue, setInputValue)}>
-                        + add another title
+                    <div className="add-custom-option">
+                        <p className="add-custom-option-text link" onClick={() => addExtraField(inputValue, setInputValue)}> + add another title</p>
                     </div>
                 }
 
@@ -110,8 +110,8 @@ const TargetTitlesPage = ({ handleNavClick, input_limit}) => {
                 </div>
 
                 {excludedTitles.length < input_limit &&
-                    <div className="add-custom-option" onClick={() => addExtraField(excludedTitles, setExcludedTitles)}>
-                        + add another title
+                    <div className="add-custom-option" >
+                        <p className="add-custom-option-text link" onClick={() => addExtraField(excludedTitles, setExcludedTitles)}> + add another title</p>
                     </div>
                 }
 

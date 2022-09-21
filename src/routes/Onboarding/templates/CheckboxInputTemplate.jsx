@@ -62,8 +62,9 @@ const CheckboxInputTemplate = ({ inputHeader, inputKey, options, checkboxWidth, 
                 <div className="checkbox-container-wrapper">
                     <div className={`checkbox-container  ${checkbox_width}`}>
                         {options.map((option, i) => {
+                            let justify_type = i % 3 === 0 ? "justify-end" : (i % 2 === 1 ? "justify-start" : "" );
                             return (
-                                <div key={i} className={`checkbox-input ${column_class}`}>
+                                <div key={i} className={`checkbox-input ${justify_type} ${column_class}`}>
                                     <div className="checkbox-input-wrapper">
                                         <input type="checkbox" id={option} name={option} value={option} onClick={(e) => update_input_value(e)} 
                                             checked={inputValue.includes(option)}
