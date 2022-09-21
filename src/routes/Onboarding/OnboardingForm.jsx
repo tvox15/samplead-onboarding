@@ -82,8 +82,6 @@ const OnboardingForm = () => {
                     inputHeader={page.inputHeader}
                     inputKey={page.inputKey}
                     subheaderText={page.subheaderText}
-                    progressBarText={page.progressBarText}
-                    progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
             case "MultipleInputTemplate":
@@ -95,8 +93,6 @@ const OnboardingForm = () => {
                     addText={page.addText}
                     input_limit={page.input_limit}
                     placeholder={page.placeholder}
-                    progressBarText={page.progressBarText}
-                    progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
             case "CheckboxInputTemplate":
@@ -106,30 +102,27 @@ const OnboardingForm = () => {
                     inputKey={page.inputKey}
                     options={page.options}
                     custom_options={page.custom_options}
-                    progressBarText={page.progressBarText}
-                    progressBarFill={page.progressBarFill}
+                    checkboxWidth={page.checkboxWidth}
+                    columns={page.columns}
                     handleNavClick={handleNavClick}
                 />
             case "GeolocationTemplate":
                 return <GeoLocationsPage
                     key={currentPage}
                     options={page.options}
-                    progressBarText={page.progressBarText}
-                    progressBarFill={page.progressBarFill}
+                    checkboxWidth={page.checkboxWidth}
+                    columns={page.columns}
                     handleNavClick={handleNavClick}
                 />
             case "TargetTitlesPage":
                 return <TargetTitlesPage
                     key={currentPage}
-                    progressBarText={page.progressBarText}
-                    progressBarFill={page.progressBarFill}
+                    input_limit={page.input_limit}
                     handleNavClick={handleNavClick}
                 />
             case "MarketingMaterialsPage":
                 return <MarketingMaterialsPage
                     key={currentPage}
-                    progressBarText={page.progressBarText}
-                    progressBarFill={page.progressBarFill}
                     handleNavClick={handleNavClick}
                 />
         }

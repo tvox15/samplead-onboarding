@@ -4,7 +4,7 @@ import { validate_email } from "../../../utils/utils";
 import { DISABLE_ERRORS } from '../../../utils/constants';
 import "../onboarding.css";
 
-const SingleInputTemplate = ({ inputHeader, inputKey, progressBarText, progressBarFill, handleNavClick, type = "text", subheaderText = null }) => {
+const SingleInputTemplate = ({ inputHeader, inputKey,   handleNavClick, type = "text", subheaderText = null }) => {
     const [inputValue, setInputValue] = useState("");
     const [errorMsg, setErrorMsg] = useState("");
 

@@ -5,9 +5,12 @@ import { DISABLE_ERRORS } from '../../../utils/constants';
 
 import "../onboarding.css";
 
-const CheckboxInputTemplate = ({ inputHeader, inputKey, options,  progressBarText, progressBarFill, handleNavClick, customOptions = false }) => {
+const CheckboxInputTemplate = ({ inputHeader, inputKey, options, checkboxWidth, columns,  handleNavClick, customOptions = false }) => {
     const [inputValue, setInputValue] = useState([]);
     const [errorMsg, setErrorMsg] = useState("");
+
+    const column_class = columns ? `checkbox-col-${columns}` : "";
+    const checkbox_width = checkboxWidth ? `checkbox-w-${checkboxWidth}` : "";
 
     const update_input_value = (e) => {
         setInputValue(remove_or_add_from_array(inputValue, e.target.value));
@@ -41,10 +44,10 @@ const CheckboxInputTemplate = ({ inputHeader, inputKey, options,  progressBarTex
                     <div className="input-header-text"><p>{inputHeader}</p></div>
                 </div>
                 <div className="checkbox-container-wrapper">
-                    <div className="checkbox-container">
+                    <div className={`checkbox-container  ${checkbox_width}`}>
                         {options.map((option, i) => {
                             return (
-                                <div key={i} className="checkbox-input">
+                                <div key={i} className={`checkbox-input ${column_class}`}> 
                                     <div className="checkbox-input-wrapper">
                                         <input type="checkbox" id={option} name={option} value={option} onClick={(e) => update_input_value(e)} />
                                         <label htmlFor={option}>{option}</label>

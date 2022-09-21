@@ -5,7 +5,7 @@ import NavButtons from '../../../components/NavButtons/NavButtons';
 
 const fileTypes = ["JPEG", "PNG", "GIF", "PDF", "DOCX"];
 
-const MarketingMaterialsPage = ({ progressBarText, progressBarFill, handleNavClick }) => {
+const MarketingMaterialsPage = ({ handleNavClick }) => {
     const [errorMsg, setErrorMsg] = useState("");
     const [files, setFiles] = useState([]);
 

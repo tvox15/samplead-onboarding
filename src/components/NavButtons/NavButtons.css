@@ -7,10 +7,12 @@
     justify-content: flex-end;
     align-items: center;
     padding: 0px;
-
-    width: 80%;
+    position: absolute;
+    bottom: 113px;
+    right: 200px;
+     
     height: 71px;
-
+    z-index: 10001;
     /* border: 1px solid #000000; */
 
 }
@@ -19,7 +21,7 @@
     /* Label */
     width: 30px;
     height: 20px;
-
+    z-index: 10001;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -37,4 +39,25 @@
 
 .purple-button {
     color: #A54CFF;
+}
+
+@media (max-width: 768px) {
+
+
+    .navigation-container {
+        /* left */
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        height: 71px;
+        z-index: 10001;
+        position: initial;
+        /* border: 1px solid #000000; */
+        bottom: initial;
+        right: initial;
+    }
 }

@@ -9,7 +9,11 @@ import '../onboarding.css';
 
 
 // { inputHeader, inputKey, options, handleNavClick, customOptions= false }
-const GeoLocationsPage = ({ handleNavClick, options, progressBarText, progressBarFill }) => {
+const GeoLocationsPage = ({ handleNavClick, options, checkboxWidth, columns}) => {
+
+    const column_class = columns ? `checkbox-col-${columns}` : "";
+    const checkbox_width = checkboxWidth ? `checkbox-w-${checkboxWidth}` : "";
+
     const [geoLocations, setGeoLocations] = useState([]); // for checkboxes
 
     const [includeSpecificTerritories, setIncludeSpecificTerritories] = useState(false);
@@ -64,10 +68,10 @@ const GeoLocationsPage = ({ handleNavClick, options, progressBarText, progressBa
                     <div className="input-header-text"><p>Geographic locations you are aiming at:</p></div>
                 </div>
                 <div className="checkbox-wrapper">
-                    <div className="checkbox-container">
+                    <div className={`checkbox-container ${checkbox_width}`}>
                         {options.map((option, i) => {
                             return (
-                                <div key={i} className="checkbox-input">
+                                <div key={i} className={`checkbox-input  ${column_class}`}>
                                     <div className="checkbox-input-wrapper">
                                         <input type="checkbox" id={option} name={option} value={option} onClick={(e) => update_input_value(e)} />
                                         <label htmlFor={option}>{option}</label>

@@ -8,10 +8,9 @@ import "../onboarding.css";
 
 
 
-const TargetTitlesPage = ({ handleNavClick,  progressBarText, progressBarFill }) => {
+const TargetTitlesPage = ({ handleNavClick, input_limit}) => {
 
-    const max_titles = 3;
-
+ 
     const [inputValue, setInputValue] = useState(["", ""]);
     const [excludedTitles, setExcludedTitles] = useState([""]);
     const [excludedTitlesDisabled, setExcludedTitlesDisabled] = useState(true);
@@ -51,7 +50,7 @@ const TargetTitlesPage = ({ handleNavClick,  progressBarText, progressBarFill })
 
     const addExtraField = (value, setFn) => {
         setErrorMsg(false);
-        if (value.length < max_titles) {
+        if (value.length < input_limit) {
             setFn([...value, ""]);
         }
 
@@ -82,7 +81,7 @@ const TargetTitlesPage = ({ handleNavClick,  progressBarText, progressBarFill })
                             </div>
                         </div>)
                 })}
-                {inputValue.length < max_titles &&
+                {inputValue.length < input_limit &&
                     <div className="add-custom-option" onClick={() => addExtraField(inputValue, setInputValue)}>
                         + add another title
                     </div>
@@ -91,7 +90,7 @@ const TargetTitlesPage = ({ handleNavClick,  progressBarText, progressBarFill })
 
                 <div className="full-length-container">
                     <div className="radio-and-input-container low-padding auto-grow extra-wide">
-                        <label className="align-center">Would you like to exclude any titles? <br></br>For example: "Consultants"</label>
+                        <label className="align-center weight-200">Would you like to exclude any titles? For example: "Consultants"</label>
                         <span className='centered-radio'><RadioButton label="No" value={excludedTitlesDisabled} onChange={() => setExcludedTitlesDisabled(true)} /></span>
                         <span className='centered-radio mb-1'><RadioButton label="Yes" value={!excludedTitlesDisabled} onChange={() => setExcludedTitlesDisabled(false)} /></span>
                         {excludedTitles.map((value, index) => {
@@ -111,7 +110,7 @@ const TargetTitlesPage = ({ handleNavClick,  progressBarText, progressBarFill })
                     </div>
                 </div>
 
-                {excludedTitles.length < max_titles &&
+                {excludedTitles.length < input_limit &&
                     <div className="add-custom-option" onClick={() => addExtraField(excludedTitles, setExcludedTitles)}>
                         + add another title
                     </div>

@@ -6,7 +6,7 @@ import "../onboarding.css";
 
 
 
-const MultipleInputTemplate = ({ inputHeader, inputKey,  handleNavClick, addText, placeholder, input_limit,  progressBarText, progressBarFill, subheaderText = null }) => {
+const MultipleInputTemplate = ({ inputHeader, inputKey,  handleNavClick, addText, placeholder, input_limit,  subheaderText = null }) => {
     const [inputValue, setInputValue] = useState(["", ""]);
     const [errorMsg, setErrorMsg] = useState("");
 
