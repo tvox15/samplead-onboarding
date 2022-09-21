@@ -87,7 +87,7 @@ export const pages = [
         inputKey: "targetTitles",
         subheaderText: "For example: VP of Technology",
         addText: "+ add another target title",
-        input_limit: 5,
+        input_limit: 10,
         placeholder: "Title",
         progressBarText: "Target 5/8",
         progressBarFill: 62,

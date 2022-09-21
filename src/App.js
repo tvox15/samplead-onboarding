@@ -2,18 +2,20 @@ import './App.css';
 import OnboardingForm from './routes/Onboarding/OnboardingForm';
 /* import DashboardPage from './routes/DashboardNew/DashboardPage';
 import CampaignPage from './routes/CampaignsPage';
-import SettingsPage from './routes/Settings/SettingsPage';
-import LoggedInTemplate from './Templates/LoggedInTemplate';
 
 import Route from './components/Router/Route';
 import Link from './components/Router/Link'; */
+import LoggedInTemplate from './Templates/LoggedInTemplate';
+import SettingsPage from './routes/Settings/SettingsPage';
 
 function App() {
   return (
 
-         <OnboardingForm />
-      
-   
+    /*  <OnboardingForm /> */
+    <LoggedInTemplate>
+      <SettingsPage />
+    </LoggedInTemplate>
+
   );
 }
 

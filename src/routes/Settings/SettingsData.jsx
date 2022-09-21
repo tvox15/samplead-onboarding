@@ -109,34 +109,34 @@ export const current_data = [
   export const checkboxes = [
     {
       name: "Job change",
-      checked: false,
+      value: false,
     },
     {
       name: "News articles",
-      checked: false,
+      value: false,
     },
     {
-      name: "Linkedin groups",
-      checked: false,
+      name: "LinkedIn groups",
+      value: false,
     },
     {
       name: "Linkedin posts",
-      checked: false,
+      value: false,
     },
     {
       name: "Linkedin events",
-      checked: false,
+      value: false,
     },
     {
       name: "Medium activity",
-      checked: false,
+      value: false,
     },
     {
       name: "Twitter tweets",
-      checked: false,
+      value: false,
     },
     {
       name: "Funding event",
-      checked: false,
+      value: false,
     },
   ]
