@@ -15,6 +15,7 @@ import "./Header.css";
 
 const Header = props => {
 	// const { user } = props;
+	const { logoOnly } = props;
 	const user = {
 		image: {
 			url: avatar,
@@ -32,6 +33,18 @@ const Header = props => {
 		// handle signout
 		//	dispatch(userActions.signOut());
 	};
+
+	if (logoOnly) {
+		return (
+			<nav className="header">
+				<div className="nav-container">
+					<Link href={PATH_HOME} className="nav-logo">
+						{" "}
+					</Link>
+				</div>
+			</nav>
+		)
+	}
 
 	return (
 		<nav className="header">

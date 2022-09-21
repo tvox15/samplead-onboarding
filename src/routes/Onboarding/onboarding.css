@@ -1,11 +1,11 @@
 .page-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+     
+    height: 93vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 20px;
     /* Primary/ Gradient */
     background: linear-gradient(180deg, #A93BFF 0%, #8834FF 100%), #DADADA;
     color: white;

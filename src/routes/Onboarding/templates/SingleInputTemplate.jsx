@@ -46,7 +46,7 @@ const SingleInputTemplate = ({ inputHeader, inputKey,   handleNavClick, type = "
                 <div className="input-header">
                     <div className="input-header-text"><p>{inputHeader}</p></div>
                 </div>
-                {subheaderText && <div className={`subheader centered`}>
+                {subheaderText && <div className={`subheader centered weight-200`}>
                     <div className="subheader-text"><p>{subheaderText}</p></div>
                 </div>}
                 <div className="input-caption-container">

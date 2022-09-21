@@ -3,6 +3,7 @@ import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import "./onboarding.css";
 import logo from "../../assets/images/logo.png";
 import LoadingBar from 'react-top-loading-bar'
+import Header from '../../components/Header';
 
 import { pages } from './PageData';
 import SingleInputTemplate from './templates/SingleInputTemplate';
@@ -139,18 +140,22 @@ const OnboardingForm = () => {
 
 
     return (
-        <div className="page-container">
-            <LoadingBar
+        <>
+    <LoadingBar
                 color='#5F2A94'
                 progress={progress}
                 height={3}
                 transitionTime={100}
                 onLoaderFinished={() => setProgress(0)}
-            />
+            />  
+                 <Header logoOnly={true} />
+        <div className="page-container">
+            
             <div className="page-header">
-                <div className="page-header-image">
+         
+             {/*    <div className="page-header-image">
                     <img src={logo} alt="logo" />
-                </div>
+                </div> */}
                 <div className="progress-bar-container">
                     <div className="page-header-progress">
                         {currentPage !== 0 && <div className="page-header-progress-bar">
@@ -164,7 +169,8 @@ const OnboardingForm = () => {
             {get_current_page(currentPage)}
 
 
-        </div>);
+        </div>
+        </>);
 
 }
 export default OnboardingForm;
