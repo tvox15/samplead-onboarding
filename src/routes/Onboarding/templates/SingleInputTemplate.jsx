@@ -4,7 +4,7 @@ import { validate_email } from "../../../utils/utils";
 import { DISABLE_ERRORS } from '../../../utils/constants';
 import "../onboarding.css";
 
-const SingleInputTemplate = ({ inputHeader, inputKey,   handleNavClick, type = "text", subheaderText = null }) => {
+const SingleInputTemplate = ({ inputHeader, inputKey, handleNavClick, type = "text", subheaderText = null }) => {
     const [inputValue, setInputValue] = useState("");
     const [errorMsg, setErrorMsg] = useState("");
 
@@ -12,10 +12,8 @@ const SingleInputTemplate = ({ inputHeader, inputKey,   handleNavClick, type = "
         setInputValue(e.target.value);
     }
 
-
-
     const next_clicked = (action) => {
-        setErrorMsg(false);
+        setErrorMsg("");
         let hasError = false;
         // validate input
         if (action === "next") {
@@ -56,7 +54,7 @@ const SingleInputTemplate = ({ inputHeader, inputKey,   handleNavClick, type = "
                     {errorMsg && <div className="error-msg">{errorMsg}</div>}
                 </div>
             </div>
-            <NavButtons handleNavClick={next_clicked} />
+            <NavButtons key={inputKey} handleNavClick={next_clicked} />
         </>
     )
 }

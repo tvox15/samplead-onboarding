@@ -20,6 +20,10 @@ const OnboardingForm = () => {
 
     const [currentPage, setCurrentPage] = useState(0);
     const [progress, setProgress] = useState(0);
+    const [previousPageClass, setPreviousPageClass] = useState("previous-page");
+    const [currentPageClass, setCurrentPageClass] = useState("current-page");
+    const [nextPageClass, setNextPageClass] = useState("next-page");
+    const [visiblePages, setVisiblePages] = useState([]);
 
     const [formAnswers, setFormAnswers] = useState({
         fullName: "",
@@ -132,6 +136,23 @@ const OnboardingForm = () => {
         }
     }
 
+    useEffect(() => {
+
+        let visible_pages = pages.map((page, index) => {
+            if (index <= currentPage - 2) return;     // return if page is 2 before current page
+            if (index >= currentPage + 2) return;     // return if page is 2 past current page
+            return (
+                <div className={`form-container ${currentPage === index ? ` ${currentPageClass}` : currentPage > index ? previousPageClass : nextPageClass}`} key={index}>
+                    {get_current_page(currentPage)}
+                </div>
+            )
+        });
+        setVisiblePages(visible_pages);
+
+
+    }, [currentPage])
+
+
     if (currentPage === pages.length) {
         return (<>
             <Header logoOnly={true} />
@@ -140,6 +161,7 @@ const OnboardingForm = () => {
             </div>
         </>)
     }
+
 
 
     return (
@@ -163,9 +185,11 @@ const OnboardingForm = () => {
                     </div>
                 </div>
 
-                {get_current_page(currentPage)}
+               {/*  {visiblePages} */}
 
 
+          {get_current_page(currentPage)} 
+               
             </div>
         </>);
 
